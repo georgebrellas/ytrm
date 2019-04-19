@@ -50,10 +50,10 @@ def main(args):
             print("Warning! File rename has been already been done to this folder. To continue either delete/rename oldnames.txt or use the -i flag")
 
         else:
-            replacenames(osdir, args.chars, args.skip)
+            replacenames(osdir, args.c, args.skip)
 
     else:
-        replacenames(osdir, args.chars, args.skip)
+        replacenames(osdir, args.c, args.skip)
 
 parser = argparse.ArgumentParser(description='File renaming help tool.')
 parser.add_argument('-i', '--ignore', help='Ignore the filename list check.', action='store_true')
